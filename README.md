@@ -1,7 +1,7 @@
 # 💫 About Me:
 
-I'm a Front-end Developer offering over 2 years of experience in web design/development, user interface, testing, anddebugging. Proficient in
-jquery, javascript, html and other web technologies with a proven track record of efficiently self-managing during autonomous tasks and collaborating in a team context.
+I'm a Front-end Developer offering over 2 years of experience in web design/development, user interface, testing, and debugging. Proficient in
+jquery, javascript, HTML5, CSS and other web technologies with a proven track record of efficiently self-managing during autonomous tasks and collaborating in a team context.
 
 
 # 📊 GitHub Stats:
