@@ -21,8 +21,3 @@ jquery, javascript, HTML5, CSS and other web technologies with a proven track re
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/anyega-alex-kamau) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/theseasoneddev ) 
-
-
-## 🐦 Latest Tweet
-[![](https://gtce.itsvg.in/api?username=theseasoneddev )](https://github.com/VishwaGauravIn/github-twitter-card-embed)
-
