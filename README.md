@@ -1,7 +1,6 @@
 # 💫 About Me:
 
-I'm a Front-end Developer offering over 2 years of experience in web design/development, user interface, testing, and debugging. Proficient in
-jquery, javascript, HTML5, CSS and other web technologies with a proven track record of efficiently self-managing during autonomous tasks and collaborating in a team context.
+I'm a Front-end Developer offering over 3 years of experience in web design/development, user interface testing, and debugging. Proficient in javascript, python, C#, C++ and other web technologies with a proven track record of efficiently self-managing during autonomous tasks and collaborating in a team context.
 
 
 # 📊 GitHub Stats:
@@ -20,4 +19,4 @@ jquery, javascript, HTML5, CSS and other web technologies with a proven track re
 [![](https://visitcount.itsvg.in/api?id=AnyegaAlex&icon=0&color=0)](https://visitcount.itsvg.in)
 
 ## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/anyega-alex-kamau) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/theseasoneddev ) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/anyega-alex-kamau) 
