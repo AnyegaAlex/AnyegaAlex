@@ -33,14 +33,6 @@
   
 </div>
 
-# GitHub Achievements
-
-<div align="center">
-  
-  ![Trophies](https://github-profile-trophy.vercel.app/?username=AnyegaAlex&theme=radical&no-frame=true&rank=SECRET,SSS,SS,S,AAA,AA,A,B&margin-w=15)
-  
-</div>
-
 
 # Certifications
 
