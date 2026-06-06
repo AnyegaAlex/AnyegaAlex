@@ -80,7 +80,7 @@ TIES has been validated using walk-forward methodology on 7+ years of XAUUSD dat
 
 **The methodology is public. The specific strategy parameters are not.**
 
--> [View complete walk-forward validation results](https://tickflowcapital.com)
+-> [View complete walk-forward validation results](https://tickflowcapital.com/#backtests)
 
 ### Commercial Products Built on TIES
 
@@ -92,7 +92,8 @@ Tickflow Capital offers three products extracted directly from our internal TIES
 | Market Context API | Real-time regime classification, volatility state, structural levels | $1,500/month |
 | Enterprise Risk Suite | White-label risk gate infrastructure with full audit trail | Custom quote |
 
--> [See product details and sample reports](https://tickflowcapital.com)
+-> [See product details](https://tickflowcapital.com/#pricing)
+-> [See sample report details](https://tickflowcapital.com/downloads/sample_report)
 
 ### Why This Matters
 
@@ -125,7 +126,7 @@ We don't trade what we can't validate. Every strategy deployed through TIES must
 
 **Rule:** If all three agree, you have an edge. If they diverge, you're curve-fit.
 
--> [View complete walk-forward methodology](https://tickflowcapital.com)
+-> [View complete walk-forward methodology](https://tickflowcapital.com/#backtests)
 
 ### Metrics That Define an Edge
 
