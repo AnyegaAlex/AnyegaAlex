@@ -2,282 +2,147 @@
 
 ## Quantitative Systems Engineer | Full-Stack Architect | Algorithmic Trader
 
-**I build production systems where statistical edge meets code excellence because markets don't forgive wishful thinking, and neither do I.**
+I build production systems where statistical edge meets code excellence.
 
-I'm a software engineer with 5+ years of full-stack, AI, and data engineering experience, and a quantitative trader who validates every strategy with walk-forward analysis, Monte Carlo confidence, and live capital. The result is systems that are not only beautifully engineered but also statistically trustworthy, whether they're trading XAUUSD or powering a budgeting app used by 60%+ of beta testers.
+I am a software engineer with 5+ years of full-stack, AI, and quant development experience. My work spans two production systems:
 
----
-
-## The Intersection: Why Development + Financial Markets?
-
-Two sides of the same coin drive everything I build.
-
-### 1. The Trader's Side (The Heart)
-
-I'm a trader first. Not a theorist. A practitioner.
-
-I grew a live account from $20 to over $10,000. Not through luck, but through discipline, risk management, and understanding market microstructure. Every gain taught me humility. Every loss taught me respect for the craft.
-
-Trading isn't just charts and candlesticks. It's risk psychology, watching drawdown test your soul at 3 AM. It's execution precision, one fat-finger click away from disaster. It's regime awareness, knowing when not to trade is the ultimate edge.
-
-I've felt the sting of a losing streak. I've felt the rush of a perfectly executed reversal. That lived experience, not theory, informs every line of code I write.
-
-### 2. The Engineer's Side (The Hands)
-
-I went to school for this. Bachelor of Science in Computer Science (Second Class Upper Division) from Maasai Mara University.
-
-That formal foundation gave me data structures and algorithms, so efficient systems don't happen by accident. Database management for append-only audit logs, ACID compliance, and time-series at scale. Machine learning for feature engineering that actually generalizes. Web development for full-stack SaaS products, not just trading bots.
-
-But theory without practice is useless. So I built.
-
-### When They Meet: TIES
-
-TIES (Trading Intelligence & Execution System) is the fusion.
-
-| Trader's Input | Engineer's Implementation |
-|----------------|---------------------------|
-| "I need a kill switch when drawdown hits 8%" | 7-gate risk engine with Redis-backed halt states |
-| "Why did that trade enter?" | Append-only audit log, every decision replayed by trace_id |
-| "My broker's spreads exploded at news" | Slippage monitoring and anomaly flagging |
-| "Backtesting looked great, live trading failed" | Walk-forward validation, 75% pass rate across 7 years |
-| "I can't watch charts 24/5" | Event-driven async architecture with Telegram C&C |
-
-The result is a production trading system that trades real capital through MT5, built by a trader who codes, not a coder who trades.
-
-### But It's Not Just Trading
-
-The same obsessive attention to data integrity, real-time processing, and user value lives in my full-stack SaaS projects.
-
-Trading taught me risk management. CS school taught me systems thinking. Together, they make me dangerous in a good way.
-
-**The bottom line:** I'm not an academic. I'm not a backtest overfitter. I'm a trader who can build the infrastructure I need and then sell the excess tools to others who share the same pain.
-
--> [See what I've built](https://tickflowcapital.com)
+- Tickflow Intelligence: Open-source AI stock platform with LSTM + FinBERT, 30+ API endpoints, and 68-page documentation
+- TIES: Trading Infrastructure and Execution System with 7-gate risk controls, MT5 integration, and 75 percent walk-forward pass rate
 
 ---
 
-## Featured Project: TIES (Trading Intelligence & Execution System)
+## Featured Projects
 
-**The production trading engine powering Tickflow Capital's research and validation products.**
+### Tickflow Intelligence - AI Stock Intelligence Platform
 
-TIES is our internal, Python-first algorithmic trading system, battle-tested on live capital and now partially commercialized through Tickflow Capital. It's not a hobby bot. It's the infrastructure we trust with real money.
+Production AI platform for stock direction prediction using LSTM + FinBERT sentiment analysis.
 
-**Tech Stack:** Python/FastAPI, PostgreSQL, Redis, MT5 API, Prometheus, Grafana, Loki, Docker, Cloudflare
+An open-source (MIT) platform combining:
 
-### What TIES Does
+- Hybrid Model: 50 percent LSTM + 30 percent FinBERT sentiment + 20 percent technical indicators
+- 30+ REST API endpoints with OpenAPI and Swagger documentation
+- Multi-source news ingestion from Alpha Vantage, Finnhub, and Yahoo Finance with SHA-256 deduplication
+- React dashboard with real-time visualisations and prediction tracking
+- Dual-layer authentication: JWT and PBKDF2-hashed API keys with tiered rate limiting
+- Async pipelines: Celery and Redis for news processing
+- Observability: Sentry, UptimeRobot, and structured JSON logging
+- Automated resolution: 7-day prediction tracking via cron jobs
 
-| Layer | Capability |
-|-------|-------------|
-| Signal Engine | Multi-factor scenario detection with regime-aware scoring |
-| Risk Engine | 7 cascading gates: kill switch, budget, drawdown, position caps, anomaly detection |
-| Execution Bridge | Preflight validation, MT5 dispatch, fill reconciliation, position tracking |
-| Observability | Prometheus + Grafana + Loki + Alertmanager + Sentry |
-| Audit System | Append-only PostgreSQL log with full trace replay |
+Supports 10 symbols (AAPL, TSLA, NVDA, GOOGL, AMZN, META, MSFT, JPM, IBM, VTI) with 15+ years of historical data.
 
-### Validated Through Live Capital
+| Component | URL |
+|-----------|-----|
+| Live Demo | https://sentiment-driven-stock-price-predic.vercel.app/ |
+| Swagger API Docs | https://sentiment-driven-stock-price-prediction.onrender.com/api/docs/ |
+| GitHub | https://github.com/AnyegaAlex/Sentiment-Driven-Stock-Price-Prediction-Using-News-Headlines |
 
-TIES has been validated using walk-forward methodology on 7+ years of XAUUSD data, the same rigorous process we offer to clients. Every statistical claim is backed by independent out-of-sample periods and Monte Carlo analysis.
-
-**The methodology is public. The specific strategy parameters are not.**
-
--> [View complete walk-forward validation results](https://tickflowcapital.com/#backtests)
-
-### Commercial Products Built on TIES
-
-Tickflow Capital offers three products extracted directly from our internal TIES deployment.
-
-| Product | For | Price |
-|---------|-----|-------|
-| Strategy Validation | Prop firms and systematic traders needing statistical edge assessment | $3,500 one-time |
-| Market Context API | Real-time regime classification, volatility state, structural levels | $1,500/month |
-| Enterprise Risk Suite | White-label risk gate infrastructure with full audit trail | Custom quote |
-
--> [See product details](https://tickflowcapital.com/#pricing)
--> [See sample report details](https://tickflowcapital.com/downloads/sample_report)
-
-### Why This Matters
-
-We don't sell what we wouldn't use ourselves. Every TIES component, every risk gate, every audit log, every observability metric was built because we needed it to trade our own capital safely.
-
-The software is the product. The live trades are the proof.
-
-**Website:** [tickflowcapital.com](https://tickflowcapital.com)
-**Research:** Walk-forward validation, VPS OpSec, Backtesting paradox
-**Contact:** info@tickflowcapital.com
-
-**Repos:** [GitHub](https://github.com/AnyegaAlex/) for open-source projects unrelated to TIES core IP.
+Tech Stack: React, Django, PyTorch, FinBERT, PostgreSQL, Redis, Celery, Docker, Vercel, Render
 
 ---
 
-## Quant Philosophy: Why Rigor Is Non-Negotiable
+### TIES - Trading Infrastructure and Execution System
 
-**The problem:** Most retail traders backtest to confirm their bias.
-**The solution:** Walk-forward validation with independent out-of-sample testing.
+Production trading engine for research, validation, and live execution. Built by traders, for traders.
 
-We don't trade what we can't validate. Every strategy deployed through TIES must pass a three-stage gauntlet before seeing live capital.
+TIES is Tickflow Capital's proprietary in-house platform for systematic trading strategy development and deployment.
 
-### Validation Hierarchy
+#### Research Platform
 
-| Stage | What It Does | Why It Matters |
-|-------|--------------|----------------|
-| In-Sample | Train on historical data | Proof of concept |
-| Out-of-Sample (Walk-Forward) | Test on held-out periods | Generalization test, catches curve-fitting |
-| Blind Hold-Out | Evaluate on unseen future data after live trading starts | Ultimate truth |
+| Component | Description |
+|-----------|-------------|
+| Backtesting Engine | Event-driven backtesting processing 7 years of tick data at 1-minute resolution |
+| Monte Carlo Simulation | 10,000 iteration ensemble for robustness testing |
+| Walk-Forward Validation | 4 independent test windows with 24-month training and 12-month testing |
+| Statistical Analysis | t-statistic, p-value calculation, confidence intervals |
+| Regime Detection | Hidden Markov Models for market regime classification |
 
-**Rule:** If all three agree, you have an edge. If they diverge, you're curve-fit.
+Key Metric: 75 percent pass rate across 4 out-of-sample windows (2018 to 2025)
 
--> [View complete walk-forward methodology](https://tickflowcapital.com/#backtests)
+#### Risk Engine - 7 Layer Validation
 
-### Metrics That Define an Edge
+| Gate | Control |
+|------|---------|
+| 1 | Kill Switch with 3-level emergency stop (pause, halt, kill) |
+| 2 | Daily Budget Gates with hard limits on daily trading exposure |
+| 3 | Drawdown Controls with maximum drawdown limits enforced |
+| 4 | Position Constraints with caps on position sizes |
+| 5 | Calendar-Based Restrictions with time-based trading rules |
+| 6 | Slippage Monitoring for broker anomaly detection |
+| 7 | Preflight Validation with pre-trade checks before any order dispatch |
 
-| Metric | Threshold | Why |
-|--------|-----------|-----|
-| Profit Factor | > 1.5 (excellent > 1.9) | Gross profit divided by gross loss, simple and unforgiving |
-| Sharpe Ratio | > 0.5 | Risk-adjusted return |
-| Max Drawdown | Hard cap at 8% | System halts if exceeded, non-negotiable |
-| Win Rate | Secondary | Risk/reward ratio matters more than hit rate |
-| Monte Carlo Confidence | > 98% of shuffled sequences beat breakeven | Separates edge from luck |
+#### Execution Infrastructure
 
-### Intermarket Context (XAUUSD Focus)
+| Component | Description |
+|-----------|-------------|
+| Low-Latency Execution | Sub-second order dispatch through MT5 |
+| Retry Logic | Automatic retry with exponential backoff |
+| Fill Reconciliation | Order-to-fill matching and verification |
+| Slippage Modeling | Realistic market condition simulation |
 
-Gold in isolation is noise. Gold relative to macro is signal.
+#### Observability Stack
 
-| Signal | Role |
-|--------|------|
-| DXY (Dollar Index) | Inverse correlation, primary filter |
-| VIX (Volatility Index) | Regime classification (LOW/NORMAL/ELEVATED/EXTREME) |
-| US10Y (Bond Yields) | Real rate direction, opportunity cost signal |
-| Economic Calendar | No entry 30 minutes before or after high-impact events |
+| Tool | Purpose |
+|------|---------|
+| Prometheus | 12 production metrics monitored |
+| Grafana | Real-time dashboards |
+| Loki | Centralised log aggregation |
+| Alertmanager | 9 alert rules for system anomalies |
+| Sentry | Real-time error capture |
 
-Macro bias classification (bullish/bearish/neutral) weights every signal before it reaches the risk engine.
+#### Audit System
 
-### What Walk-Forward Validation Looks Like
+- Append-Only PostgreSQL Log: Every decision has a trace_id
+- Full Replay Capability: Any decision chain can be replayed
+- No Application-Level Deletes: Immutable record of all actions
+- Trace ID Correlation: Decision to execution to outcome tracking
 
-Training Period (24 months) -> Test Period (12 months) -> Result
+#### Performance Metrics From Validation Data
 
-2018-2019 -> 2020 -> PASS
-2019-2020 -> 2021 -> FAIL
-2020-2021 -> 2022 -> PASS
-2021-2022 -> 2023 -> PASS
-2022-2023 -> 2024 -> PASS
-2023-2024 -> 2025 -> PASS
+| Metric | Value |
+|--------|-------|
+| Pass Rate | 75 percent (3 of 4 windows) |
+| Avg Profit Factor | 1.90 (passing windows: 2.27 average) |
+| Total Trades | 124 across 4 windows |
+| Best Window Return | +13.14 percent (Window 1, 2020) |
+| Sharpe Ratio | 2.10 |
+| Monte Carlo Confidence | 98.6th percentile |
 
-**Our 7-year XAUUSD validation:** 75% pass rate across independent windows.
+Tech Stack: Python, FastAPI, MT5, PostgreSQL, Redis, Prometheus, Grafana, Loki, Docker, AWS, Cloudflare
 
--> [See detailed results](https://tickflowcapital.com)
-
-### The Backtest Paradox
-
-90% of strategies fail in live trading. Not because the idea was bad, but because the validation was lazy.
-
-**Common pitfalls we avoid:**
-
-| Pitfall | Our Fix |
-|---------|---------|
-| Lookahead bias | Signals use only historically available data |
-| Survivorship bias | Include delisted instruments in testing |
-| Slippage ignorance | 3.0 pip spread assumption plus execution quality audits |
-| Regime overfitting | Test across bull, bear, and sideways markets |
-| Transaction cost neglect | Realistic commission and swap modeling |
-
--> [Read full article: The Backtest Paradox](https://tickflowcapital.com)
-
-### Why This Philosophy Is Built Into TIES
-
-Every risk gate, every audit log, every observability metric exists because statistical rigor isn't optional. It's the moat between profitable systems and expensive lessons.
-
-| Component | Enforces |
-|-----------|----------|
-| 7-gate Risk Engine | Drawdown, budget, and position discipline |
-| Append-Only Audit Log | Full replayability, no hiding decisions |
-| Prometheus + Grafana | Real-time equity curves and risk state |
-| Slippage Monitoring | Broker anomaly detection (spread explosion, time desync) |
-
-**We don't sell what we wouldn't use ourselves.** TIES runs our own capital. Every product Tickflow Capital offers was extracted from a system that already proved itself in live markets.
-
-**Website:** [tickflowcapital.com](https://tickflowcapital.com)
-**Research:** Walk-forward validation, VPS OpSec, Backtesting paradox
-**Contact:** info@tickflowcapital.com
-
----
-
-## Other Notable Engineering Projects
-
-### Budget Buddy - AI-Driven Personal Finance Platform
-
-React + Firebase responsive budgeting app with custom expense categories. ML-powered recommendations for spending predictions and goal tracking. Achieved 60% user engagement during beta testing.
-
-[Live demo](https://budget-buddy-rose-phi.vercel.app/) | [GitHub](https://github.com/AnyegaAlex/budget-buddy)
-
-### Machine Learning Stock Prediction Platform
-
-DistilBERT sentiment analysis at 92% accuracy combined with HistGradientBoostingClassifier at 82% test accuracy. Features SHAP explainability, batch CSV predictions, and an interactive Gradio UI.
-
-[Hugging Face Space](https://huggingface.co/spaces/AnyegaAlex/stock-prediction-analytics)
-
-### Global Cost-of-Living Explorer
-
-Django REST API with React frontend and Leaflet maps to compare inflation, wages, and currency trends across 50+ countries. Redis caching reduced query time by 50%.
-
-[GitHub](https://github.com/AnyegaAlex/Cost-of-Living-Explorer)
-
-### Sentiment-Driven Stock Price Prediction (Real-Time)
-
-FinBERT sentiment analysis with Celery/Redis async pipeline, integrating Alpha Vantage and Yahoo Finance. Features SHA-256 deduplication and Dockerised deployment.
-
-[Live demo](https://sentiment-driven-stock-price-predic.vercel.app)
+Website: https://tickflowcapital.com
 
 ---
 
 ## Tech Stack
 
-### Backend & Data Infrastructure
+### Backend and APIs
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DD0031?style=flat-square&logo=redis&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-8B4513?style=flat-square)
+Python, Django, FastAPI, PostgreSQL, Redis
 
-### Quant & Market Data
+### Quant and Trading
 
-![MetaTrader5](https://img.shields.io/badge/MetaTrader5-008B8B?style=flat-square)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+MetaTrader5, Pandas, NumPy, scikit-learn, PyTorch
 
-### Frontend & Visualization
+### Frontend
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![D3.js](https://img.shields.io/badge/D3.js-F9A03C?style=flat-square&logo=d3.js&logoColor=white)
-![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chart.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+React, Chart.js, TailwindCSS
 
-### Observability & DevOps
+### Infrastructure and DevOps
 
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F2CC0C?style=flat-square&logo=grafana&logoColor=black)
-![Loki](https://img.shields.io/badge/Loki-8B4513?style=flat-square)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+Docker, AWS, Cloudflare, GitHub Actions
 
----
+### Observability
 
-## GitHub Analytics
-
-<div align="center">
-  
-  ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AnyegaAlex&theme=radical&hide_border=true)
-  
-</div>
+Prometheus, Grafana, Loki, Sentry
 
 ---
 
 ## Certifications
 
-![Google Analytics](https://img.shields.io/badge/Google_Analytics-Certified-4285F4?style=flat-square&logo=google-analytics&logoColor=white)
-![IAB Digital Marketing](https://img.shields.io/badge/IAB_Digital_Marketing-Certified-FF6F00?style=flat-square)
+- Google Analytics Certification - Skillshop - Aug 2023
+- Google Analytics Individual Qualification - Google - Aug 2023
+- IAB Digital Marketing Foundations - Google Digital Garage - Aug 2022
+- Learn Elementor and WordPress - Udemy - Feb 2023
 
 ---
 
@@ -285,23 +150,15 @@ FinBERT sentiment analysis with Celery/Redis async pipeline, integrating Alpha V
 
 I enjoy conversations about:
 
-- Quant and trading: backtesting methodology, walk-forward validation, risk architecture, MT5 integration, regime classification
-- Full-stack systems: FastAPI, async Python, observability, audit logging, rate limiting
-- Commercial validation: product-market fit for developer tools, SaaS pricing, founder-led sales
+- Quant and Trading: Walk-forward validation, risk architecture, MT5 integration, regime classification
+- Full-Stack Systems: API design, async Python, observability, audit logging, rate limiting
+- Open Source: Developer tools, documentation, community building
 
-<div align="center">
-  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/anyega-alex-kamau)
-  [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anyega.alex.kamau@gmail.com?subject=Trading%20Systems%20%7C%20Quant%20Chat)
-  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnyegaAlex)
-  [![Calendly](https://img.shields.io/badge/Schedule_30min-00A4EF?style=for-the-badge&logo=calendly&logoColor=white)](https://calendly.com/anyega-alex/30min)
-  
-</div>
+LinkedIn: https://linkedin.com/in/anyega-alex-kamau
+Gmail: anyega.alex.kamau@gmail.com
+GitHub: https://github.com/AnyegaAlex
+Calendly: https://calendly.com/anyega-alex/30min
 
-<div align="center">
-  
-  ![Visitor Count](https://komarev.com/ghpvc/?username=AnyegaAlex&color=blueviolet&style=flat-square)
-  
-  *Building systems that don't lie. Trading capital on them to prove it.*
-  
-</div>
+---
+
+Building systems that don't lie.
