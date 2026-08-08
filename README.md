@@ -28,7 +28,7 @@ An open-source (MIT) platform combining:
 - Observability: Sentry, UptimeRobot, and structured JSON logging
 - Automated resolution: 7-day prediction tracking via cron jobs
 
-Supports 10 symbols (AAPL, TSLA, NVDA, GOOGL, AMZN, META, MSFT, JPM, IBM, VTI) with 15+ years of historical data.
+Supports multiple symbols with 15+ years of historical data.
 
 | Component | URL |
 |-----------|-----|
